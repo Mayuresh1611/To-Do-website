@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="todoapp/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1 class="title">TO DO APP</h1>
+        <div class="download-container">
+            <button class="download">Download</button>
+            <div class="download-text">FOR WINDOWS</div>
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="app-outline">
+            <div class="app">
+                <div id=""></div>
+                    <div class="list" style="overflow-y:scroll;" >
+                    <div class="task-list" style="margin-bottom: 10px;">
+                        <div class="task selected" id="task0" complete="false" ispassed="1" style="height: 19.6px;"><time class="time limit"><input maxlength="2" value="12">:<input maxlength="2" value="30"></time><textarea  rows="1" class="task-input" maxlength="90" type="text" disabled="">task 1</textarea><time class="time end"></time></div>
+                    </div>
+                <button class="addtask"><span>+</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="left-column">           
+            <div class="feature top-header">FEATURES</div>
+            <div class="feature-content content">
+                <ul>
+                    <li>Complete keyboard accessibility while encouraging speed.</li>
+                    <li>One of the most Light weight TO DO APP.</li>
+                    <li>Displays time of completion, thus providing a feedback to embrace productivity.</li>
+                    <li>Time of the task can be changed if some task left out, but not the content.</li>
+                    <li>Tasks will rearrange themselves according to the time</li>
+                    <li>With simple UI to controls, one can only be successfull if used honestly.</li>
+                </ul>
+            </div>
+            <div class="guide top-header" >HOW TO USE</div>
+            <div class="guide-content content">
+                <ul>
+                    <li><span class="keys">+</span> button to create New Task</li>
+                    <li><span class="keys">Shift + Enter</span> while inside text area to create New Task</li>
+                    <li><span class="keys">Tab</span> or <span class="keys">Enter</span> to register Task</li>
+                    <li><span class="keys">Up</span> and <span class="keys">Down</span> to select Tasks</li>
+                    <li><span class="keys">Enter</span> to mark selected Task as Complete</li>
+                    <li><span class="keys">Ctrl + Enter</span> to mark selected Task as Incomplete</li>
+                    <li><span class="keys">Delete</span> to remove the selected Task</li>
+                </ul>
+            </div>
+        </div>
+            
+        <!-- 1. press + to create new task
+            2. Shift + Enter while inside text area to create new task
+            3. tab / Enter to register the task
+            4. up / down keys to select task
+            5. Enter to mark the task as complete
+            6. ctrl+Enter to mark it incomplete
+            7. delete to remove selected task  -->            
+    </div>
+  
+    <div>
+    </div>
+    <script src="todoapp/main.js"></script>
+    <script></script>
+</body>
+</html>
