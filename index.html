@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="todoapp/styles.css">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <title>To Do App</title>
 </head>
 <body>
     
     <div class="header">
         <h1 class="title">TO DO APP</h1>
         <div class="download-container">
-            <button class="download">Download</button>
+            <button class="download" onclick = "downloadFile()" >Download</button>
+            <a id="download-link" href="todoapp/toDo_0.0.31_x86_en-US.msi" style="display: none;" type="download"></a>
             <div class="download-text">FOR WINDOWS</div>
+            <h2 class="created-by">Created By:<a style="color:aqua;" target="_blank" href="https://mayuresh1611.github.io/personal-portfolio-site/">Mayuresh Satam</a></h2>
         </div>
     </div>
     <div class="right-column">
@@ -28,6 +31,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
     <div class="left-column">           
             <div class="feature top-header">FEATURES</div>
@@ -53,20 +57,17 @@
                     <li><span class="keys">Delete</span> to remove the selected Task</li>
                 </ul>
             </div>
-        </div>
-            
-        <!-- 1. press + to create new task
-            2. Shift + Enter while inside text area to create new task
-            3. tab / Enter to register the task
-            4. up / down keys to select task
-            5. Enter to mark the task as complete
-            6. ctrl+Enter to mark it incomplete
-            7. delete to remove selected task  -->            
+        </div>        
     </div>
   
     <div>
     </div>
     <script src="todoapp/main.js"></script>
-    <script></script>
+    <script>
+        function downloadFile(){
+            var link = document.getElementById("download-link")
+            link.click()
+        }
+    </script>
 </body>
 </html>

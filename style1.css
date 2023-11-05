@@ -109,6 +109,7 @@ body{
     color: aliceblue;
     overflow-y: scroll;
     overflow-x:hidden;
+    border: 0.5rem solid rgba(0, 0, 0, 0.11);
 }
 
 .top-header{
@@ -141,4 +142,15 @@ li{
 .content{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
+}
+
+.created-by{
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    color: aliceblue;
+    font-weight: 100;
+    font-family:monospace;
+    text-shadow: 0 0 0.2rem rgb(255, 255, 255);
+    font-size: 1rem;
 }
